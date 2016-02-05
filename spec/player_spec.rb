@@ -9,7 +9,7 @@ describe Player do
     expect(player.name).to eq 'Valentina'
   end
 
-  it 'returns player 1 hp' do
+  it 'returns returns a confirmation after an attack' do
     expect(player.hp).to eq hp
   end
 end
