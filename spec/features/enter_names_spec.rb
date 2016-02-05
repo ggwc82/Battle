@@ -43,3 +43,12 @@ feature 'Player 2 HP is reduced' do
     expect(page).to have_content 'Valentina: 90HP'
   end
 end
+
+feature 'Change turns' do
+  scenario 'changes turns after 1 successful attack' do
+    sign_in_and_play
+    click_link 'Attack'
+    click_link 'Change Turns'
+    expect(page).to have_content 'Rebecca: 100HP'
+  end
+end

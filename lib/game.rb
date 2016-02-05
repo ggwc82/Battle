@@ -7,6 +7,11 @@ class Game
 
   def attack(player)
     player.was_attacked
+    switch_turn
+  end
+
+  def switch_turn
+    @players = players.reverse
   end
 
 
